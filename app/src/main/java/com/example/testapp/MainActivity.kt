@@ -22,8 +22,19 @@ class MainActivity : AppCompatActivity() {
         with(binding){
             txtNumber.text = number.toString()
 
+            // increase number
             btnCount.setOnClickListener{
                 number++
+                txtNumber.text = number.toString()
+            }
+            // subtract number
+            btnSubtract.setOnClickListener {
+                number--
+                txtNumber.text = number.toString()
+            }
+            // adding 2
+            btnAdd2.setOnClickListener {
+                number += 2
                 txtNumber.text = number.toString()
             }
             btnToast.setOnClickListener {
